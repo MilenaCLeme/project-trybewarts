@@ -16,4 +16,15 @@
   height: 500px;
 }
 
+.flexivel {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+#input-name {
+  flex-basis: 40%;
+}
+
+#input-lastname {
+  flex-basis: 40%;
+}
