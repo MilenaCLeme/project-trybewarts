@@ -107,37 +107,36 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-013-b-project-trybewarts`
 
-2. Crie uma branch a partir da branch `master`
-  * Verifique que você está na branch `master`
+2. Instale as dependências e inicialize o projeto
+  * Instale as dependências:
+    * `npm install`
+3. Crie uma branch a partir da branch `main`
+  * Verifique que você está na branch `main`
     * Exemplo: `git branch`
-  * Se não estiver, mude para a branch `master`
-    * Exemplo: `git checkout master`
+  * Se não estiver, mude para a branch `main`
+    * Exemplo: `git checkout main`
   * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
-    * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b joaozinho-trybewarts-project`
+    * Você deve criar uma branch no seguinte formato: `nome-sobrenome-nome-do-projeto`
+    * Exemplo: `git checkout -b joao-silva-trybewarts-project`
 
-3. Crie na raiz do projeto os arquivos que você precisará desenvolver:
+4. Crie na raiz do projeto os arquivos que você precisará desenvolver:
   * Verifique que você está na raiz do projeto
-    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-013-b-project-trybewarts**_
+    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joao/code/**sd-013-b-project-trybewarts**_
   * Crie os arquivos index.html, style.css e script.js
     * Exemplo: `touch index.html style.css script.js`
 
-4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
+5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
   * Verifique que as mudanças ainda não estão no _stage_
     * Exemplo: `git status` (devem aparecer listados os novos arquivos em vermelho)
   * Adicione o novo arquivo ao _stage_ do Git
-      * Exemplo:
-        * `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-        * `git status` (devem aparecer listados os arquivos em verde)
-  * Faça o `commit` inicial
-      * Exemplo:
+	@@ -135,10 +137,10 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
         * `git commit -m 'iniciando o projeto. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
         * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
-5. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin joaozinho-trybewarts-project`
+6. Adicione a sua branch com o novo `commit` ao repositório remoto
+  * Usando o exemplo anterior: `git push -u origin joao-silva-trybewarts-project`
 
-6. Crie um novo `Pull Request` _(PR)_
+7. Crie um novo `Pull Request` _(PR)_
   * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-013-b-project-trybewarts/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
@@ -629,7 +628,7 @@ Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus co
 
   * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
 
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-013-a`.
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-013-b`.
 
 Caso tenha alguma dúvida, [aqui tem um vídeo explicativo](https://vimeo.com/362189205).
 
