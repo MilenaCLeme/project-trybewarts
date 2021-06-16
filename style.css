@@ -19,6 +19,7 @@
 .flexivel {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 #input-name {
