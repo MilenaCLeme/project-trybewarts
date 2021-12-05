@@ -20,7 +20,7 @@
   justify-content: center;
   border-width: 6px;
   border-style:  groove;
-  border-color: rgb(50, 167, 145);
+  border-color:  rgb(50, 167, 145);
 }
 
 .informação p {
@@ -165,3 +165,5 @@
   top:  435px; left: 690px;
   opacity: 0.6;
 }
+
+/* Pesaro Bold
