@@ -23,12 +23,16 @@
   </header>
   <main id="main">
     <form id="evaluation-form">
+      <div class="logo">
+        <p class="fs-3">Formulário</p>
+        <img id="trybewarts-forms-logo" class="img-fluid" src="images/trybewarts-colored.svg" alt="logo da Trybewarts">
+      </div>
       <div id="pessoal">
-        <div id="inputfullName">
-          <input type="text" class="form-control"  id="input-name" name="nome" placeholder="Nome">
-          <input type="text" class="form-control"  name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+        <div class="input-group">
+          <input type="text" class="form-control" id="input-name" name="nome" placeholder="Nome">
+          <input type="text" class="form-control" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
         </div>
-        <div id="inputEmailCasa">
+        <div class="input-group">
           <input type="email" id="input-email" class="form-control" name="email" placeholder="Email">
           <div id="select" class="form-floating">
             <select name="Casa" id="house" class="form-select">
@@ -40,9 +44,10 @@
             <label for="Casa" for="floatingSelect">Casa</label>
           </div>
         </div>
+        <hr>
       </div>
-      <div class="flexivel">
-        <div id="primeiracoluna" class="form-check">
+      <div class="ladoALado">
+        <div id="primeiracoluna">
           <label for="family" class="form-check-label" id="label-family">Qual sua família?</label>
           <div class="form-check">
             <input type="radio" class="form-check-input"  name="family" class="radio" value="Frontend">
@@ -59,7 +64,7 @@
         </div>
         <div id="segundaColuna">
           <label for="learn" id="label-content" class="form-check-label">Qual conteúdo você está com mais vontade de aprender?</label>
-          <div class="colunaDentroDaSegunda">
+          <div class="input-group">
             <div class="form-check form-check-inline">
               <input type="checkbox" class="form-check-input" name="learn" class="subject" value="HoFs">
               <label class="form-check-label" for="learn">HoFs</label>
@@ -73,7 +78,7 @@
               <label class="form-check-label" for="learn">Promises</label>
             </div>
           </div>
-          <div class="colunaDentroDaSegunda">
+          <div class="input-group">
             <div class="form-check form-check-inline">
               <input type="checkbox"  name="learn" class="form-check-input" class="subject" value="React">
               <label class="form-check-label" for="learn">React</label>
@@ -89,50 +94,54 @@
           </div>
         </div>
       </div>
+      <hr>
       <div id="rate-input">
-        <label for="rate" id="label-rate" class="form-check-label" >Como você avalia a Trybewarts?</label>
-        <div class="form-check form-check-inline">
-          <input type="radio" class="form-check-input" name="rate" class="rate" value="1">
-          <label class="form-check-label" for="rate">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input type="radio" class="form-check-input"  name="rate" class="rate" value="2">
-          <label class="form-check-label" for="rate">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input type="radio" class="form-check-input" name="rate" class="rate" value="3">
-          <label class="form-check-label" for="rate">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input type="radio" class="form-check-input" name="rate" class="rate" value="4">
-          <label class="form-check-label" for="rate">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input type="radio" class="form-check-input" name="rate" class="rate" value="5">
-          <label class="form-check-label" for="rate">5</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input type="radio" class="form-check-input" name="rate" class="rate" value="6">
-          <label class="form-check-label" for="rate">6</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input type="radio" class="form-check-input" name="rate" class="rate" value="7">
-          <label class="form-check-label" for="rate">7</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input type="radio" class="form-check-input" name="rate" class="rate" value="8">
-          <label class="form-check-label" for="rate">8</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input type="radio" class="form-check-input" name="rate" class="rate" value="9">
-          <label class="form-check-label" for="rate">9</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input type="radio" class="form-check-input" name="rate" class="rate" value="10">
-          <label class="form-check-label" for="rate">10</label>
+        <label for="rate" id="label-rate" class="form-label">Como você avalia a Trybewarts?</label>
+        <div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="rate" class="rate" value="1">
+            <label class="form-check-label" for="rate">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input"  name="rate" class="rate" value="2">
+            <label class="form-check-label" for="rate">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="rate" class="rate" value="3">
+            <label class="form-check-label" for="rate">3</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="rate" class="rate" value="4">
+            <label class="form-check-label" for="rate">4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="rate" class="rate" value="5">
+            <label class="form-check-label" for="rate">5</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="rate" class="rate" value="6">
+            <label class="form-check-label" for="rate">6</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="rate" class="rate" value="7">
+            <label class="form-check-label" for="rate">7</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="rate" class="rate" value="8">
+            <label class="form-check-label" for="rate">8</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="rate" class="rate" value="9">
+            <label class="form-check-label" for="rate">9</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="rate" class="rate" value="10">
+            <label class="form-check-label" for="rate">10</label>
+          </div>
         </div>
       </div>
-      <div class="flexivelColun">
+      <hr>
+      <div>
         <label class="textarea" class="form-check-label">Deixe seu comentário:</label>
         <textarea id="textarea" maxlength="500" class="form-control"></textarea>
         <p id="counter">500</p>
@@ -142,12 +151,9 @@
         <input type="checkbox" class="form-check-input" name="agreement" id="agreement">
         <label class="form-check-label" for="agreement">Agreement</label>
       </div>
-      <button type="button" class="btn btn-primary" id="submit-btn" disabled>Enviar</button>
+      <button type="button" class="btn" id="submit-btn" disabled>Enviar</button>
     </form>
     <div id="segunda"></div>
-    <div>
-      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo da Trybewarts">
-    </div>
   </main>
   <footer>Direitos reservados à Trybewarts©</footer>
   <script src="script.js"></script>  
