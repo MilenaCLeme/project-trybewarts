@@ -48,7 +48,7 @@
   align-items: center;
 }
 
-#evaluation-form {
+.fundo {
   margin-top: 25px;
   margin-bottom: 25px;
   padding: 40px;
@@ -115,4 +115,24 @@
 footer {
   background-color: black;
   color: white;
+}
+
+.informação {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 40px;
+  width: 50%;
+  height: 30em;
+  background-color:  #e5c07f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.informação p {
+  font-size: medium;
+  padding: 5px;
+  font-style: initial;
+  font-weight: bold;
+  color: #5b1800;
 }

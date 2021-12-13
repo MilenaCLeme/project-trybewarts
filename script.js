@@ -4,7 +4,7 @@ const STATE_INICIAL = {
   nome: '',
   sobrenome: '',
   email: '',
-  casa: '',
+  casa: 'Gitnória',
   familia: '',
   materias: [],
   avaliacao: '',
